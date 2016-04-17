@@ -1,1 +1,3 @@
 # Garrison_CSCI2270_FinalProject
+
+This project will use a binary tree data structure to implement a "choose your own adventure" type game. Users will start at the root node and create their own story, traveling through the tree based on the choices they make. The game will have a pre-set story with various outcomes already loaded in and ready to play. Other functionalities of the project will include users editing existing nodes, creating their own nodes in a new tree to make a brand new adventure to play, printing out a summary of their adventure and the choices they made, showing what other outcomes would have been had the user made a different choice, hints of which path to choose, searching the tree, etc. 
