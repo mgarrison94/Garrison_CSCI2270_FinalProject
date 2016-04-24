@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1461469462 source:/home/user/Desktop/Final Project/main.cpp
+	<iostream>
+	"storyTree.h"
+
+1461469352 /home/user/Desktop/Final Project/include/storyTree.h
+	<iostream>
+
+1461474994 source:/home/user/Desktop/Final Project/src/storyTree.cpp
+	"storyTree.h"
+
