@@ -1,6 +1,7 @@
 #ifndef STORYTREE_H
 #define STORYTREE_H
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -10,7 +11,6 @@ struct storyNode
         storyNode* right;
         storyNode* parent;
         string text;
-        int index;
         string choice;
     };
 
@@ -20,17 +20,23 @@ class storyTree
         storyTree();
         virtual ~storyTree();
         void adventure();
-        void printAdventure();
-        void whatIf(int index);
-        void backtrack(storyNode node);
-        void random(storyNode *root);
-        void allOutcomes(storyNode *root);
+        void printAdventure(storyNode *stop);
+        void whatIf(storyNode *stop);
+        storyNode* backtrack(storyNode *node);
+        void random();
+        void allOutcomes();
         void initialTree();
-        storyNode *root;
+        void storyGenre(string letter);
+        storyNode* randomChoice(storyNode* current);
+        storyNode* getFinish();
+        storyNode* getRoot();
+
     protected:
     private:
-        storyNode* addNode(std::string text, std::string choice, storyNode* par);
         void deleteNode(string text);
+        storyNode *finish;
+        vector <storyNode*> path;
+        storyNode *root;
 };
 
 #endif // STORYTREE_H
