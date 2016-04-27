@@ -41,7 +41,13 @@ int main()
         }
         else if (choice=="5")
         {
-            T.allOutcomes();
+            cout<<"Warning, spoilers! Are you sure you want to continue? (y) or (n)"<<endl;
+            string ans;
+            cin>>ans;
+            if (ans =="y")
+            {
+                T.allOutcomes();
+            }
         }
         else if(choice=="6")
         {
