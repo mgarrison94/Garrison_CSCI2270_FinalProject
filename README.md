@@ -12,8 +12,8 @@ A few libraries (in addition to iostream) are required for this project:
 1. #include "stdlib.h"
 2. #include "ctime"
 3. #include "cstdlib"
-4. #include <vector>
-Just type as shown above on the project files; no other installation steps necessary.
+4. #include vector
+Just type as shown above on the project files (except "vector" should have "<" and ">" surrounding it but github didn't like that formatting); no other installation steps necessary.
 
 System Requirements:
 Linux
