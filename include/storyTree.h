@@ -19,24 +19,23 @@ class storyTree
     public:
         storyTree();
         virtual ~storyTree();
+        void allOutcomes();
+    protected:
+    private:
+        storyNode *finish;
+        vector <storyNode*> path;
+        storyNode *root;
+        int recIndex = 0;
         void adventure();
         void printAdventure(storyNode *stop);
         void whatIf(storyNode *stop);
         storyNode* backtrack(storyNode *node);
         void random();
-        void allOutcomes();
+        void allOutRecursive(storyNode *node);
         void initialTree();
         void storyGenre(string letter);
         storyNode* randomChoice(storyNode* current);
         storyNode* getFinish();
-        storyNode* getRoot();
-
-    protected:
-    private:
-        void deleteNode(string text);
-        storyNode *finish;
-        vector <storyNode*> path;
-        storyNode *root;
 };
 
 #endif // STORYTREE_H
