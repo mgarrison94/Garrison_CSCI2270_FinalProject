@@ -2,6 +2,8 @@
 #define STORYTREE_H
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -42,6 +44,7 @@ class storyTree
         void allOutcomes();
 
         void initialTree();
+        void initialTree(char* inFile);
         void adventure();
         storyNode* getFinish();
         void printAdventure(storyNode *stop);
@@ -57,6 +60,7 @@ class storyTree
         storyNode* backtrack(storyNode *node);
         void allOutRecursive(storyNode *node);
         storyNode* randomChoice(storyNode* current);
+        void printGoatImage();
 };
 
 #endif // STORYTREE_H
