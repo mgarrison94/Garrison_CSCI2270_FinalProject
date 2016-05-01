@@ -53,11 +53,11 @@ void storyTree::initialTree()
 
 void storyTree::adventure()
 {
+    storyTree::printGoatImage();
     cout<<"Adventure Mode"<<endl;
     cout<<"Press (g) to go back a step, (r) to choose randomly, or (q) to quit at any time"<<endl;
     cout<<endl;
     storyNode *tmp = root;
-    storyTree::printGoatImage();
 
     while (tmp->left!=NULL)
     {
@@ -345,37 +345,39 @@ storyNode* storyTree::randomChoice(storyNode *current)
 }
 
 void storyTree::printGoatImage() {
-    cout<<"     `/:`       `-:."<<endl;
-    cout<<".`     :+.    -+o:``.."<<endl;
-    cout<<":o/-`  .o+:--/o+``-+o+"<<endl;
-    cout<<" :oooo:/hddddho:+ooss-"<<endl;
-    cout<<"  `-/o:/dddmms//yys:."<<endl;
-    cout<<"     /o/hdddy/+sss."<<endl;
-    cout<<"     -s+yyyhs+ysso-`                                        .-:::."<<endl;
-    cout<<"     `s+ssssoyhsyyo+/-`                       ````      .:/+yhyyo."<<endl;
-    cout<<"      ++oso//yyyyyyssooo/::::-..```.-/:::/++oooooo+/:-`:yhdmhso/."<<endl;
-    cout<<"      ./yy+/osyyhhhyyyyyyhhhhyyyyssssyyyssyyyyyyyhyyyysyddyo:`"<<endl;
-    cout<<"       .so++syhdyyhhhhyyhhhhhhyyyddhhhhhhhhddddhhhhhhhhhyho-`"<<endl;
-    cout<<"        ...:oyhyyhddhhhhddddhhhyyhdmhhdddddhhhhhhhhhhhhhhyy/`"<<endl;
-    cout<<"         .oyhhhdddddddmdddhdhhhddhydddmhdhhhhhhhhhhhhhyy/"<<endl;
-    cout<<"            :yyhhdddddmddddddddhdddhhhdhdhddhhhhhhhhddhhyy:"<<endl;
-    cout<<"             :yyhhhdddmddddddddddddddddhhdddddhhhhhhdmddhyy."<<endl;
-    cout<<"             +yyhhhhhdddddddddddddddmddddhdddddhhhhhdddddhy."<<endl;
-    cout<<"             +yhdddhhddddddddhdhhdddmmddhddddhdhyhhddddddhho`"<<endl;
-    cout<<"             :yhdmdhhhhhhhhhhdhdhhdddddddhdddddhhdmdddddhhdh/`"<<endl;
-    cout<<"             -shdmmhhhddhhhhhdddhyhhdddddddddddddmmddddhhdhyo:`"<<endl;
-    cout<<"            `-+yhdddhddddddhddddhhdddddddddddhhhysyhhdhhhdhys+-`"<<endl;
-    cout<<"             ./syyssyhyyhhdhdhdhhdddhhhhhyyyysso+++osyyhhhhhso/-`"<<endl;
-    cout<<"             `-sysooss:/yhhhyhysosssoo+++++oo++//+++:/oyhhyyso/.`"<<endl;
-    cout<<"             ``oysoooo .syyyyyo.`````` ```.--.:/+o+/--+oo+osso/`"<<endl;
-    cout<<"               /ys+oo: -yhhdhy:               `:+++-``-.```-++:`"<<endl;
-    cout<<"               -//++- `/shdho:`                /o+/`        :/:."<<endl;
-    cout<<"               .:++.   :+sy+`                 .+++-         ./:-"<<endl;
-    cout<<"               :/+:    :so:`                 `/++/`         .::-"<<endl;
-    cout<<"              -//+`    /s/.                 `:+++-          `:::`"<<endl;
-    cout<<"              -:+/    `+//.                `/oo/-           `//:."<<endl;
-    cout<<"             .:/+-    -:::-                -sys-.            ://-"<<endl;
-    cout<<"           `.:/+:   -::::-     "<<endl;
-    cout<<"          .:oso-   +///:.      "<<endl;
-    cout<<"           `:+/:   -s+o+-"<<endl;
+    cout<<"      .(,"<<endl;
+    cout<<"       /(,      *(("<<endl;
+    cout<<"/*,     /*    *((   ,//."<<endl;
+    cout<<".((///.,(#%%%%#/, */(#/"<<endl;
+    cout<<"  ./(#,*%&&&&%(,,%##(*"<<endl;
+    cout<<"     //,#&&&**/##."<<endl;
+    cout<<"     .#*###%%//#((/"<<endl;
+    cout<<"      #/(####/%%###/,                                           /(#(#."<<endl;
+    cout<<"      (*((((/*%#(##(((*,                          ..       ./(#%&&%#(."<<endl;
+    cout<<"      ,/##(/,/####%###((##((##(/*.. .,(((((((####((#####(, %&%&&(/."<<endl;
+    cout<<"       ,(#**#(###%%%######%%%%###%%######%######%###%%%%###%&%(*"<<endl;
+    cout<<"        /#/,(##&#%%%%#%#%%%%%####%&%%%&%%%%&&&%%%%%%#%%###*,"<<endl;
+    cout<<"            .(###%%%%%%%%&%&%%%%%#%#&#&&%&%%#%#%####%%%##%%#%*"<<endl;
+    cout<<"             .##%#%%%%%&&%&&%%%%%%%%%&%%#&&&%&&%#%%#%#%%#####,"<<endl;
+    cout<<"              (###%%%&&&&&&%%&%%%%%%&%%%%%%%&%&%%#%%%%%%%####."<<endl;
+    cout<<"              (#%%%%%&&&&&%&&&%%%%%%&&%%&%%#&%%%&%#%%%%%&&%%###"<<endl;
+    cout<<"              (##%%%%%&&&&&&%&%%&%%%&&&%%%%%%%%%&%%%#%#%&%%&%#("<<endl;
+    cout<<"              (#%%%%%%%%&&%%%%%%%%%%%&&&&&%&%&%%%%%#%%&%&%%%%#%*"<<endl;
+    cout<<"              (#%&&%%%%%%%%%%%%%%%%%%%&&&%&%%%%&%%%%%%&&&&%%%%&%."<<endl;
+    cout<<"              *#%&&&%%%%%%%%%%%&&&%#%%%%&&&&&&%&%&&&&@%&%&%%%%%#(,"<<endl;
+    cout<<"             .,(%%&&&%%%&%%%%%%%&%%%%%%&%%&%%&%%%%%%#%%%%%%%&&%((/."<<endl;
+    cout<<"              */(#%#%%%%%%%&&%&%%%%&%&%%%%%%%%%###(//((%%%%#&%%#(/*,"<<endl;
+    cout<<"              .,(##(((##((%%%#%%%%#%%%#####(((((//***///*(#%#%##((*.."<<endl;
+    cout<<"              .*#(((/((. /######(,.*,*,,....,*****////**,*(#####(/*"<<endl;
+    cout<<"                /%#//((. /###%##*                .*///*..***..*/#(,"<<endl;
+    cout<<"                ,////*. .%%%&%%/                  *///.         **,."<<endl;
+    cout<<"                .,//*   ,*(#%(.                   ///*          **,."<<endl;
+    cout<<"                .*//    ,/##*.                   ,//*.          ,*,,"<<endl;
+    cout<<"                **/      *#*                    .///*           ,**,"<<endl;
+    cout<<"               /**/     *#**                   .*///.           .*,,"<<endl;
+    cout<<"               ,*/*     ***,                  ./(/*.             /*,"<<endl;
+    cout<<"              ,*//.    .*,,,                  /&%#.              ,*/."<<endl;
+    cout<<"             ,**/,    .*,,,,                                      ,"<<endl;
+    cout<<"            ,*(((    */***,"<<endl;
+    cout<<"            .***,   ,%#%#,"<<endl;
 }
