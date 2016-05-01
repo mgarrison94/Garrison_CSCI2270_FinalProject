@@ -12,6 +12,26 @@ struct storyNode
         storyNode* parent;
         string text;
         string choice;
+
+        storyNode(){};
+        storyNode(string in_choice, string in_text) {
+            choice = in_choice;
+            text = in_text;
+            left = NULL;
+            right = NULL;
+        }
+        storyNode(string in_choice, string in_text, storyNode* in_left, storyNode* in_right) {
+            choice = in_choice;
+            text = in_text;
+            left = in_left;
+            if (in_left) {
+                left->parent = this;
+            }
+            right = in_right;
+            if (in_right) {
+                right->parent = this;
+            }
+        };
     };
 
 class storyTree
@@ -20,22 +40,23 @@ class storyTree
         storyTree();
         virtual ~storyTree();
         void allOutcomes();
+
+        void initialTree();
+        void adventure();
+        storyNode* getFinish();
+        void printAdventure(storyNode *stop);
+        void whatIf(storyNode *stop);
+        void random();
+        void storyGenre(string letter);
     protected:
     private:
         storyNode *finish;
         vector <storyNode*> path;
         storyNode *root;
         int recIndex = 0;
-        void adventure();
-        void printAdventure(storyNode *stop);
-        void whatIf(storyNode *stop);
         storyNode* backtrack(storyNode *node);
-        void random();
         void allOutRecursive(storyNode *node);
-        void initialTree();
-        void storyGenre(string letter);
         storyNode* randomChoice(storyNode* current);
-        storyNode* getFinish();
 };
 
 #endif // STORYTREE_H
