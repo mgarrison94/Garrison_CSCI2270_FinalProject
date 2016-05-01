@@ -13,6 +13,9 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="/home/user/Garrison_CSCI2270_FinalProject/" />
+					<Add directory="/home/user/Garrison_CSCI2270_FinalProject/src/" />
+					<Add directory="/home/user/Garrison_CSCI2270_FinalProject/include/" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,8 +34,21 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="/home/user/Garrison_CSCI2270_FinalProject/include/" />
+			<Add directory="/home/user/Garrison_CSCI2270_FinalProject/" />
+			<Add directory="/home/user/Garrison_CSCI2270_FinalProject/src/" />
 		</Compiler>
+		<ResourceCompiler>
+			<Add directory="/home/user/Garrison_CSCI2270_FinalProject/" />
+			<Add directory="/home/user/Garrison_CSCI2270_FinalProject/src/" />
+		</ResourceCompiler>
+		<Linker>
+			<Add directory="/home/user/Garrison_CSCI2270_FinalProject/" />
+			<Add directory="/home/user/Garrison_CSCI2270_FinalProject/src/" />
+		</Linker>
+		<Unit filename="include/storyTree.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/storyTree.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
